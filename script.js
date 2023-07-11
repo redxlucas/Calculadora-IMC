@@ -19,7 +19,27 @@ function IMC(){
     var weight = parseFloat(document.getElementById("weight").value);
     var height = parseFloat(document.getElementById("height").value);
     var result = weight/(height*height);
-    result = (result.toFixed(2));
+    var rank
+    result = result.toFixed(2);
+    if(result < 18.5){
+        rank = "Abaixo do peso";
+    }
+    else if(result >= 18.5 && result < 25){
+        rank = "Peso ideal"
+    }
+    else if(result >= 25 && result < 30){
+        rank = "Acima do peso"
+    }
+    else if(result >= 30 && result < 35){
+        rank = "Obesidade grau I"
+    }
+    else if(result >= 35 && result < 40){
+        rank = "Obesidade grau II"
+    }
+    else{
+        rank = "Obesidade grau III"
+    }
     document.getElementById("result").innerHTML = " " + result;
+    document.getElementById("rank").innerHTML = " " + rank;
     return true;
 }
