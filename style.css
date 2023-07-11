@@ -1,7 +1,7 @@
 body{
     background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14pt;
+    font-size: 16pt;
     color: #F7FFE5;
     text-align: center;
 }
@@ -11,8 +11,8 @@ fieldset{
     border: none;
     margin: 40px;
     padding: 80px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 32%;
+    margin-right: 32%;
     color: white;
 }
 #res{
@@ -27,18 +27,22 @@ fieldset{
     color: #E5BEEC;
 }
 input{
-    width: 40px;
+    width: 10%;
     border: none;
     outline: none;
-    border-bottom: 0.2em solid white;
-    background: white;
+    border-bottom: 0.25em solid white;
+    background: #474d70;
     border-radius: 0.2em 0.2em 0 0;
     padding: 0.4em;
-    border-color: #2b336b;
-    color: black;
+    border-color: #917FB3;
+    color: white;
 }
 #weight{
     margin-top: 40px;
+    margin-left: 15px;
+}
+#label-weight{
+    text-align: right;
 }
   #button{
     margin: 10px;

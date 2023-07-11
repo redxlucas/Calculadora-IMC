@@ -1,9 +1,9 @@
 function IMC(){
     document.getElementById("result").innerHTML += " ";
-    document.getElementById("weight").style.borderColor="#ffffff";
-    document.getElementById("weight").style.backgroundColor="#ffffff";
-    document.getElementById("height").style.borderColor="#ffffff";
-    document.getElementById("height").style.backgroundColor="#ffffff";
+    document.getElementById("weight").style.borderColor="#917FB3";
+    document.getElementById("weight").style.backgroundColor="#474d70";
+    document.getElementById("height").style.borderColor="#917FB3";
+    document.getElementById("height").style.backgroundColor="#474d70";
     if(document.getElementById("weight").value == "" || document.getElementById("weight").value <= "0"){
         document.getElementById("weight").style.borderColor="red";
         document.getElementById("weight").style.backgroundColor="pink";
@@ -18,8 +18,8 @@ function IMC(){
     }
     var weight = parseFloat(document.getElementById("weight").value);
     var height = parseFloat(document.getElementById("height").value);
-    var result = weight/(height**2);
-    console.log(result.toFixed(2));
+    var result = weight/(height*height);
+    result = (result.toFixed(2));
     document.getElementById("result").innerHTML = " " + result;
     return true;
 }
